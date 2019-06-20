@@ -1,0 +1,17 @@
+{% extends 'blog/main.html' %}
+{% load crispy_forms_tags %}
+{% block main_section %}
+  <div class = "form-section">
+    <h2>Вы успешно вышли из учётной записи</h2>
+    <a href = "{% url 'user' %}">Войти в личный кабинет снова</a>
+  </div>
+{% endblock main_section %}
+
+{% block aside_news_section %}
+  <h3><b>Природа</b></h3>
+  <img src="https://pp.userapi.com/c625424/v625424160/14f26/GO_VgfUfMYQ.jpg" class="img-thumbnail mb-1">
+  <p>Чтобы хорошо работать, нужно хорошо отдыхать</p>
+  <a href = "https://2krota.ru/priroda/krasivaya-priroda-65-foto.html" target = "_blank">
+    <button class="btn btn-warning"> Посмотреть </button>
+  </a>
+{% endblock aside_news_section %}
